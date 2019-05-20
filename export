@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:man="http://www.datapower.com/schemas/management">
+   <soapenv:Body>
+      <man:request domain="JBHUNT" xmlns:dp="http://www.datapower.com/schemas/management">
+         <man:do-export format="ZIP" all-files="true">
+            <man:object name="addition" class="MultiProtocolGateway" ref-objects="true" ref-files="true"/>
+         </man:do-export>
+      </man:request>
+   </soapenv:Body>
+</soapenv:Envelope>
